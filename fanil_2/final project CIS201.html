@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>TERRA</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style-final.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body> 
+    <div class="bar">
+        <nav>
+            <label class="logo">TERRA</label>
+        </nav>
+        <nav>
+            <ul>
+                <li><i class="material-icons">menu</i></li>
+                <li><a href="final%20project%20CIS201.html">HOME</a></li>
+                <li><a href="WOMEN.html">WOMEN</a></li>
+                <li><a href="MEN.html">MEN</a></li>
+                <li><a href="EXCLUSIVE.html">EXCLUSIVE</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="db_login.php">login</a></li>
+            </ul>
+            <img src="imgs.fanil/dark mood.JPG" id="mood">
+            <img src="imgs.fanil/emty cart.PNG" id="cart">
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <h1>When Fashion Embraces Nature!</h1>
+            <a href="file:///C:/Users/Abdulmohsen/Desktop/fanil.css/EXCLUSIVE.html" class="button">SHOP NOW!</a>
+        </div>
+        <div class="photo">
+            <img src="imgs.fanil/front-photo.JPG">
+        </div>
+    </div>
+    
+    <div class="bottom">
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="https://twitter.com/?lang=ar">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="Phone">Phone:920010932</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        var mood = document.getElementById("mood");
+        mood.onclick = function () {
+            document.body.classList.toggle("darkmood");
+            if (document.body.classList.contains("darkmood")) {
+                mood.src = "imgs.fanil/light Mood.JPG";
+            } else {
+                mood.src = "imgs.fanil/dark mood.JPG";
+            }
+        }
+    </script>
+
+    <script>
+        let items = 1;
+
+        if (items <= 0) {
+            cart.src = "imgs.fanil/emty cart.PNG";
+            text = 0;
+        } else {
+            cart.src = "imgs.fanil/full cart.PNG";
+            ++text;
+        }
+    </script>
+</body>
+</html>

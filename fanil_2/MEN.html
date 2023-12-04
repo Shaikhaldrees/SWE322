@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title> </title>
+<meta charset="UTE-8" />
+<title> MEN</title>
+<meta charset="UTf-8"/>
+<link rel="stylesheet" href="style-final.css"/>
+<link rel="stylesheet" href="MEN.css"/>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body> 
+
+		<div class="bar">
+			<nav>
+				<label class="logo">TERRA</label>
+			</nav>
+		<nav>
+			<ul>
+                <li><i class="material-icons">menu</i></li>
+                <li><a href="final%20project%20CIS201.html">HOME</a></li>
+                <li><a href="WOMEN.html">WOMEN</a></li>
+                <li><a href="MEN.html">MEN</a></li>
+                <li><a href="EXCLUSIVE.html">EXCLUSIVE</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="db_login.php">login</a></li>
+            </ul>
+			<img src="imgs.fanil/dark mood.JPG" id="mood">
+			<img src="imgs.fanil/emty cart.PNG" id="cart">
+			<span id='item_counter'> 0 </span>
+		</nav>
+		</div>
+		<section class="line-1">
+			<div id="M-img-line1">
+			<table>
+			<tr>
+				<th><img src="imgs.fanil/MEN/1-1.JPG" height="400"/></th>
+				<th><img src="imgs.fanil/MEN/2-1.JPG"height="400"/></th>
+				<th><img src="imgs.fanil/MEN/3-1.JPEG"height="400"/></th>
+			</tr>
+			</div>
+			<tr>
+			<td><h5>SAR 160.00</h5>
+			<h6>TERRA oversized joggers</h6>
+			<button onClick='addToCart()'> buy now</button></td>
+			<td><h5>SAR 105.00</h5>
+			<h6>TERRA oversized t-shirt </h6>
+			<button onClick='addToCart()'> buy now</button></td>
+			<td><h5>SAR350.00</h5>
+			<h6>TERRA oversized jacket</h6>
+			<button onClick='addToCart()'> buy now</button></td>
+			</tr>
+			</table>
+		</section>
+		<section class="line-2">
+		<div id="M-img-line2">
+		<table>
+		<tr>
+			<th><img src="imgs.fanil/MEN/4-1.JPG" height="400"/></th>
+			<th><img src="imgs.fanil/MEN/5-1.JPG"height="400"/></th>
+			<th><img src="imgs.fanil/MEN/6-1.JPG"height="400"/></th>
+		</tr>
+		</div>
+		<tr>
+			<td><h5>SAR 160.00</h5>
+			<h6>TERRA Dark Future co-ord oversized joggers</h6>
+			<button onClick='addToCart()'> buy now</button></td>
+			<td><h5>SAR 105.00</h5>
+			<h6>TERRA Dark Future oversized t-shirt </h6>
+			<button onClick='addToCart()'> buy now</button></td>
+			<td><h5>SAR350.00</h5>
+			<h6>TERRA Dark Future oversized jacket</h6>
+			<button onClick='addToCart()'> buy now</button></td>
+		</tr>
+			</table>
+			</section>
+		<div class="bottom">
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="https://twitter.com/?lang=ar">Twitter</a></li>
+				<li><a href="https://www.instagram.com/">Instagram</a></li>
+				<li><a href="Phone">Phone:920010932</a></li>
+			</ul>
+		</nav>
+	</footer>
+	</div>
+	<script>
+		var mood = document.getElementById("mood");
+		mood.onclick=function(){
+			document.body.classList.toggle("darkmood");
+			if(document.body.classList.contains("darkmood")){
+				mood.src="imgs.fanil/light Mood.JPG";
+			}
+			else{
+			mood.src="imgs.fanil/dark mood.JPG";
+			}
+		}
+				
+		var counter = 0;
+		var item_count;
+		var cart = document.getElementById("cart");
+		function addToCart(){
+			item_count = document.getElementById("item_counter");
+			counter = 1 +eval(item_count.textContent);
+			console.log(counter);
+			if(counter == 0){
+				cart.src="imgs.fanil/emty cart.PNG";
+			} else {
+				cart.src="imgs.fanil/fullcart.PNG";
+			}
+			
+			item_count.innerHTML = counter;
+		}
+	</script>
+	
+</body> 
+</html>

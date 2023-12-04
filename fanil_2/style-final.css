@@ -1,0 +1,157 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	font-family:Verdana, Arial;
+}
+body{
+	background: var(--light-mood);
+}
+
+.bar{
+	background:#B0C4DE;
+	width:100%;
+	height:90px;
+	padding:20px 20px;
+	color: var(dark-mood);
+}
+label.logo{
+	font-size: 35px;
+	font-weight:bold;
+	padding:20px 20px;
+	color: var(--dark-mood);
+}
+.material-icons{
+	color:#8FBC8B;
+	cursor: pointer;
+}
+nav ul{
+	float:right;
+	margin-right:60px;
+	
+}
+nav li a {
+	display:block;
+}
+nav li{
+	display:inline-block;
+	margin: 3px 5px;
+	line-height:30px;
+}
+nav a{
+	font-size:16px;
+	text-transform: uppercase;
+	border:2px solid transparent;
+	padding:3px 8px;
+	border-radius: 30px;
+}
+a:hover{
+	background-color:#8FBC8B;
+}
+a{
+	color: var(--dark-mood);
+}
+#mood{
+	width:35px;
+	cursor:pointer;
+	float:right;
+}
+#tem_counter{
+float:right;
+}
+#cart{
+	width:35px;
+	cursor:pointer;
+	flex:1;
+	
+}
+:root{
+	--light-mood:#F5F5F5;
+	--dark-mood:black;
+}
+.darkmood{
+	--light-mood:black;
+	--dark-mood:#F5F5F5;
+}
+.row{
+	display: flex;
+	align-items:center;
+	justify-content: space-around;
+}
+.col{
+	flex-basis:90%;
+	min-width: 300px;
+}
+.photo img{
+	max-width:100%;
+}
+.col h1{
+	font-size:50px;
+	line-height:70px;
+	margin:30px 0;
+	color:var(--dark-mood);
+}
+button{
+	background:#B0C4DE;
+	color:var(--dark-mood);
+	border-radius: 30px;
+	padding: 3px 20px;
+	cursor: pointer;
+	color:var(--dark-mood);
+}
+.button{
+	background:#B0C4DE;
+	color:var(--dark-mood);
+	padding: 8px 50px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+#M-img-line1, #M-img-line2{
+	display: flex;
+	align-items:center;
+}
+#W-img-line1,#W-img-line2{
+	display: flex;
+	align-items:center;
+}
+#E-img-line1, #E-img-line2{
+	display: flex;
+	align-items:center;
+}
+table{
+	width:100%;
+	text-align:center;
+}
+h5,h6{
+	color:var(--dark-mood);
+}
+.about{
+	justify-content: space-around;
+	width:100%;
+	display: flex;
+	align-items:center;
+	padding:70px 0px;
+	color:var(--dark-mood);
+	
+}
+.about-photo img{
+	height:auto;
+	width:100%;
+}
+h1{
+	font-size:50px;
+	line-height:30px;
+	margin:30px 0;
+	color:var(--dark-mood);
+}
+.text{
+	justify-content: space-around;
+	flex-basis:90%;
+	min-width: 200px;
+}
+.bottom{
+	background:#DCDCDC;
+	width:100%;
+	height:100px;
+	padding:5px 9px;
+}
